@@ -1,0 +1,127 @@
+/* OUTER SECTION */
+.facilities-section {
+  padding: 100px 60px;
+  background-color: var(--white);
+}
+
+/* SECTION HEADER — centered */
+.facilities-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 60px auto;  /* center + space below */
+}
+
+/* Reusing .section-label & .section-heading from Welcome.css
+   but we need gold-divider centered version */
+.gold-divider.centered {
+  margin: 16px auto;         /* auto left/right = centered */
+}
+
+.facilities-subtext {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.8;
+  margin-top: 16px;
+}
+
+/* GRID — 4 cards per row on desktop */
+.facilities-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 30px;
+}
+
+/* EACH CARD */
+.facility-card {
+  background-color: var(--cream);
+  padding: 40px 24px;
+  text-align: center;
+  border-radius: 4px;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  cursor: default;
+  border-bottom: 3px solid transparent; /* invisible border by default */
+}
+
+/* HOVER EFFECT on card */
+.facility-card:hover {
+  transform: translateY(-8px);           /* lifts card up */
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  background-color: var(--white);
+  border-bottom: 3px solid var(--gold);  /* gold border appears */
+}
+
+/* ICON CIRCLE */
+.facility-icon-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;                    /* circle shape */
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;             /* centered + space below */
+  transition: background 0.3s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.facility-card:hover .facility-icon-box {
+  background-color: var(--gold);        /* icon box turns gold on hover */
+}
+
+.facility-icon {
+  font-size: 32px;
+}
+
+/* TITLE */
+.facility-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 12px;
+  transition: color 0.3s;
+}
+
+.facility-card:hover .facility-title {
+  color: var(--dark-green);
+}
+
+/* DESCRIPTION */
+.facility-desc {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 1024px) {
+  /* 3 columns on tablet */
+  .facilities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .facilities-section {
+    padding: 60px 20px;
+  }
+
+  /* 2 columns on phone */
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .facility-card {
+    padding: 28px 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* 1 column on very small phones */
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,223 @@
+/* DINING INTRO SECTION */
+.dining-section {
+  padding: 100px 60px;
+  background-color: var(--cream);
+}
+
+.dining-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* INTRO — two columns */
+.dining-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.dining-intro-image {
+  height: 480px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.dining-intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.dining-intro-image:hover img {
+  transform: scale(1.05);
+}
+
+.dining-intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dining-intro-content p {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.9;
+}
+
+/* TIMINGS BOX */
+.dining-timings {
+  background: var(--dark-green);
+  color: var(--white);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.dining-timings h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.dining-timings p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 8px;
+}
+
+/* MENU SECTION */
+.menu-section {
+  margin-top: 60px;
+}
+
+.menu-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* CUISINE TABS */
+.cuisine-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.cuisine-tab {
+  padding: 10px 28px;
+  border: 2px solid #ddd;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  color: var(--gray);
+}
+
+.cuisine-tab:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.cuisine-tab.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* MENU CARD */
+.menu-card {
+  background: var(--white);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.menu-card-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.menu-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.menu-card:hover .menu-card-image img {
+  transform: scale(1.08);
+}
+
+.menu-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menu-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+.menu-card-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.menu-card-desc {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+.menu-card-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  background: var(--cream);
+  font-size: 11px;
+  color: var(--dark-green);
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+/* MOBILE */
+@media (max-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dining-section {
+    padding: 60px 20px;
+  }
+
+  .dining-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .dining-intro-image {
+    height: 280px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}

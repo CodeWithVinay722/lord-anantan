@@ -1,0 +1,205 @@
+/* ── TOP BAR ── */
+.navbar-topbar {
+  background-color: var(--dark-green); /* dark green background */
+  color: var(--white);
+  display: flex;                        /* puts children side by side */
+  justify-content: space-between;       /* left and right pushed to edges */
+  align-items: center;                  /* vertically centered */
+  padding: 8px 60px;                   /* space inside top and sides */
+  font-size: 13px;
+}
+
+.topbar-left {
+  display: flex;
+  gap: 24px;                            /* space between email and phone */
+}
+
+.topbar-left a {
+  color: var(--white);
+  text-decoration: none;               /* remove underline */
+  display: flex;
+  align-items: center;
+  gap: 6px;                            /* space between icon and text */
+}
+
+.topbar-left a:hover {
+  color: var(--gold);                  /* turn gold on hover */
+}
+
+.topbar-icon {
+  font-size: 12px;
+}
+
+.topbar-right {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icon {
+  font-size: 16px;
+  color: var(--white);
+  cursor: pointer;
+  transition: color 0.3s;              /* smooth color change on hover */
+}
+
+.social-icon:hover {
+  color: var(--gold);
+}
+
+/* ── MAIN NAVBAR ── */
+.navbar {
+  position: sticky;                    /* sticks to top when scrolling */
+  top: 0;
+  z-index: 1000;                       /* stays above all other content */
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-main {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 60px;
+}
+
+/* LOGO */
+.navbar-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--dark-green);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navbar-logo:hover {
+  color: var(--gold);
+}
+
+/* NAV LINKS LIST */
+.nav-links {
+  list-style: none;                    /* remove bullet points */
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+/* EACH NAV LINK */
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {                  /* .active is added by NavLink automatically */
+  color: var(--gold);
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;                  /* makes dropdown menu position relative to this */
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark);
+  transition: color 0.3s;
+}
+
+.dropdown:hover .dropdown-toggle {
+  color: var(--gold);
+}
+
+.dropdown-menu {
+  position: absolute;                  /* floats below the parent */
+  top: 100%;                           /* starts right below the parent */
+  left: 0;
+  background-color: var(--white);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  list-style: none;
+  min-width: 200px;
+  border-top: 2px solid var(--gold);  /* gold line on top */
+  z-index: 100;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 13px;
+  color: var(--dark);
+  transition: background 0.2s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--cream);
+  color: var(--gold);
+}
+
+/* HAMBURGER — hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--dark-green);
+}
+
+/* ── MOBILE STYLES ── */
+@media (max-width: 768px) {
+  /* 768px = tablet/phone breakpoint */
+
+  .navbar-topbar {
+    padding: 8px 20px;
+    font-size: 11px;
+  }
+
+  .navbar-main {
+    padding: 16px 20px;
+    flex-wrap: wrap;                   /* allows items to wrap */
+  }
+
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide nav links by default on mobile */
+  .nav-links {
+    display: none;
+    flex-direction: column;            /* stack links vertically */
+    width: 100%;
+    gap: 0;
+    background: var(--white);
+    padding-bottom: 16px;
+  }
+
+  /* Show nav links when menuOpen is true */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 12px 20px;
+  }
+
+  .dropdown-menu {
+    position: static;                  /* no floating on mobile */
+    box-shadow: none;
+    border-top: none;
+    background: var(--cream);
+  }
+}
+.navbar.scrolled .navbar-main {
+  box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+  transition: box-shadow 0.4s ease;
+}
