@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -181,3 +182,7 @@ see the [LICENSE](LICENSE) file for details.
 - [ ] Client Photo Gallery Updates
 - [ ] SEO Optimization
 - [ ] Performance Optimizations
+=======
+# lord-anantan
+🏨 Official website for Lord Anantan Resort, Bhopal — Built with React, Vite &amp; GSAP animations. Features WhatsApp integration, Google Maps, image gallery with lightbox, room booking, banquet inquiry and fully responsive design.
+>>>>>>> 4ed5e1c3c55ec7db2450b56b4e94530636f81961
