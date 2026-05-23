@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lordanantan.com/sitemap.xml
+
+# Block unnecessary files
+Disallow: /node_modules/
+Disallow: /src/

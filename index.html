@@ -3,33 +3,95 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- FAVICON — tab icon -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
 
-    <!-- SEO Meta Tags -->
+    <!-- PRIMARY SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Lord Anantam Resort — Luxury Hotel & Resort in Salaiya, Bhopal. Experience world-class rooms, fine dining, banquet halls and wedding venues." />
-    <meta name="keywords" content="Lord Anantam, luxury resort Bhopal, hotel Salaiya, wedding venue Bhopal, banquet hall Bhopal" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#2C4A3E" />
+
+    <meta name="description" 
+      content="Lord Anantam Resort - Best Luxury Hotel & Resort in Salaiya, Bhopal. Premium rooms, banquet halls, wedding venue, swimming pool and fine dining. Book Now!" />
+
+    <meta name="keywords" 
+      content="Lord Anantam, Lord Anantam Resort, luxury resort Bhopal, hotel Salaiya Bhopal, best hotel Bhopal, wedding venue Bhopal, banquet hall Bhopal, resort near Bhopal, luxury hotel Madhya Pradesh, Lord Anantam hotel, Salaiya resort, Bhopal resort" />
+
     <meta name="author" content="Lord Anantam Resort" />
+    <meta name="geo.region" content="IN-MP" />
+    <meta name="geo.placename" content="Bhopal, Madhya Pradesh, India" />
+    <meta name="geo.position" content="23.1602516;77.4454775" />
+    <meta name="ICBM" content="23.1602516, 77.4454775" />
 
-    <!-- Open Graph — for WhatsApp/Facebook link preview -->
-    <meta property="og:title" content="Lord Anantam | Luxury Resort Bhopal" />
-    <meta property="og:description" content="Experience luxury, comfort and warm hospitality at Lord Anantam Resort, Salaiya, Bhopal." />
-    <meta property="og:image" content="/images/hero/hero1.jpeg" />
-    <meta property="og:url" content="https://lordanantan.com" />
+    <!-- OPEN GRAPH (WhatsApp, Facebook preview) -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lord Anantam Resort" />
+    <meta property="og:title" content="Lord Anantam Resort | Luxury Hotel in Salaiya, Bhopal" />
+    <meta property="og:description" content="Experience luxury, comfort and warm hospitality at Lord Anantam Resort, Salaiya, Bhopal. Premium rooms, banquet, wedding venue & fine dining." />
+    <meta property="og:image" content="https://lordanantan.com/images/hero/hero1.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://lordanantan.com" />
+    <meta property="og:locale" content="en_IN" />
 
-    <!-- Twitter Card -->
+    <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Lord Anantam | Luxury Resort Bhopal" />
-    <meta name="twitter:description" content="Experience luxury at Lord Anantam Resort, Salaiya, Bhopal." />
-    <meta name="twitter:image" content="/images/hero/hero1.jpeg" />
+    <meta name="twitter:title" content="Lord Anantam Resort | Luxury Hotel Bhopal" />
+    <meta name="twitter:description" content="Luxury resort in Salaiya, Bhopal with premium rooms, banquet & wedding venue." />
+    <meta name="twitter:image" content="https://lordanantan.com/images/hero/hero1.jpeg" />
 
-    <title>Lord Anantam | Luxury Resort Bhopal</title>
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://lordanantan.com" />
+
+    <title>Lord Anantam Resort | Best Luxury Hotel in Salaiya, Bhopal</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+  <!-- SCHEMA MARKUP — tells Google this is a Hotel -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Lord Anantam Resort",
+  "description": "Luxury Hotel and Resort in Salaiya, Bhopal offering premium rooms, banquet halls, wedding venue and fine dining.",
+  "url": "https://lordanantan.com",
+  "telephone": "+919669752322",
+  "email": "lordanantam@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Salaiya",
+    "addressLocality": "Bhopal",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "462001",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 23.1602516,
+    "longitude": 77.4454775
+  },
+  "image": "https://lordanantan.com/images/hero/hero1.jpeg",
+  "priceRange": "₹₹₹",
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "4"
+  },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Banquet Hall", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wedding Venue", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/share/1CrxJke46y/",
+    "https://www.instagram.com/tantwayshelesh"
+  ]
+}
+</script>
 </html>
