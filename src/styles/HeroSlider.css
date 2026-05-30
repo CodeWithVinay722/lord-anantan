@@ -34,15 +34,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* semi-transparent black layer */
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.55)
   );
   display: flex;
-  align-items: center;       /* vertically center the text */
-  justify-content: center;   /* horizontally center the text */
+  align-items: center;
+  justify-content: center;
+  z-index: 2;                  /* ← add this */
 }
 
 /* TEXT CONTENT ON SLIDE */
@@ -50,8 +50,9 @@
   text-align: center;
   color: var(--white);
   padding: 0 20px;
-  /* animate text sliding up when slide becomes active */
   animation: slideUp 0.8s ease forwards;
+  position: relative;
+  z-index: 99999;              /* ← add this */
 }
 
 /* SUBTITLE (small text above heading) */
@@ -79,19 +80,21 @@
   padding: 14px 40px;
   background-color: var(--gold);
   color: var(--white);
-  text-decoration: none;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: background 0.3s, transform 0.3s;
   border: 2px solid var(--gold);
+  cursor: pointer;
+  position: relative;
+  z-index: 99999;              /* ← very high so it's always on top */
 }
 
 .slide-btn:hover {
-  background-color: transparent;  /* becomes transparent on hover */
+  background-color: transparent;
   color: var(--white);
-  transform: translateY(-2px);     /* slight lift effect */
+  transform: translateY(-2px);
 }
 
 /* ARROW BUTTONS */

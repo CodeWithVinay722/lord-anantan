@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { gsap } from 'gsap'
 import '../styles/HeroSlider.css'
@@ -17,7 +18,7 @@ const slides = [
   {
     image: '/images/hero/hero3.jpeg',
     subtitle: 'Luxury Hotel Experience',
-    title: 'Welcome to Lord Anantan',
+    title: 'Welcome to Lord Anantam',
   },
   {
     image: '/images/hero/hero4.jpeg',
@@ -48,7 +49,8 @@ const slides = [
 
 function HeroSlider() {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const contentRef = useRef(null)
+  const contentRef  = useRef(null)
+  const navigate    = useNavigate()    // ← React Router hook for navigation
 
   const goToNext = () =>
     setCurrentIndex(prev => prev === slides.length - 1 ? 0 : prev + 1)
@@ -65,14 +67,10 @@ function HeroSlider() {
   // Animate text on every slide change
   useEffect(() => {
     if (!contentRef.current) return
-
+    gsap.killTweensOf(contentRef.current.children)
     gsap.fromTo(
       contentRef.current.children,
-      {
-        opacity: 0,
-        y: 50,
-        filter: 'blur(6px)',
-      },
+      { opacity: 0, y: 60, filter: 'blur(8px)' },
       {
         opacity: 1,
         y: 0,
@@ -83,6 +81,11 @@ function HeroSlider() {
       }
     )
   }, [currentIndex])
+
+  // Book Now handler using useNavigate
+  const handleBookNow = () => {
+    navigate('/contact')
+  }
 
   return (
     <div className="hero-slider">
@@ -98,7 +101,15 @@ function HeroSlider() {
               <div className="slide-content" ref={contentRef}>
                 <p className="slide-subtitle">{slide.subtitle}</p>
                 <h1 className="slide-title">{slide.title}</h1>
-                <a href="/contact" className="slide-btn">Book Now</a>
+
+                {/* Button uses onClick with useNavigate — most reliable */}
+                <button
+                  className="slide-btn"
+                  onClick={handleBookNow}
+                >
+                  Book Now
+                </button>
+
               </div>
             )}
           </div>

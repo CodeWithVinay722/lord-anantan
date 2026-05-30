@@ -11,46 +11,53 @@ function CursorGlow() {
     const follower = followerRef.current
     if (!dot || !follower) return
 
-    const moveCursor = (e) => {
-      // Dot follows instantly
+    const onMove = (e) => {
       gsap.to(dot, {
         x: e.clientX,
         y: e.clientY,
         duration: 0,
+        ease: 'none',
       })
-      // Circle follows with smooth lag
       gsap.to(follower, {
         x: e.clientX,
         y: e.clientY,
-        duration: 0.12,
+        duration: 0.18,
         ease: 'power2.out',
       })
     }
 
-    const growCursor   = () => gsap.to(follower, { scale: 2.8, opacity: 0.3, duration: 0.3 })
-    const shrinkCursor = () => gsap.to(follower, { scale: 1,   opacity: 0.6, duration: 0.3 })
+    const onEnter = () => {
+      gsap.to(follower, { scale: 2.2, opacity: 0.3, duration: 0.3 })
+      gsap.to(dot,      { scale: 0.5, duration: 0.3 })
+    }
 
-    window.addEventListener('mousemove', moveCursor)
+    const onLeave = () => {
+      gsap.to(follower, { scale: 1, opacity: 0.6, duration: 0.3 })
+      gsap.to(dot,      { scale: 1, duration: 0.3 })
+    }
 
-    // Grow on all interactive elements
-    const targets = document.querySelectorAll('a, button, .facility-card, .room-card, .gallery-item')
+    window.addEventListener('mousemove', onMove)
+
+    const targets = document.querySelectorAll(
+      'a, button, .facility-card, .room-card, .menu-card'
+    )
     targets.forEach(el => {
-      el.addEventListener('mouseenter', growCursor)
-      el.addEventListener('mouseleave', shrinkCursor)
+      el.addEventListener('mouseenter', onEnter)
+      el.addEventListener('mouseleave', onLeave)
     })
 
     return () => {
-      window.removeEventListener('mousemove', moveCursor)
+      window.removeEventListener('mousemove', onMove)
       targets.forEach(el => {
-        el.removeEventListener('mouseenter', growCursor)
-        el.removeEventListener('mouseleave', shrinkCursor)
+        el.removeEventListener('mouseenter', onEnter)
+        el.removeEventListener('mouseleave', onLeave)
       })
     }
   }, [])
 
   return (
     <>
-      <div className="cursor-dot"      ref={dotRef}      />
+      <div className="cursor-dot"      ref={dotRef} />
       <div className="cursor-follower" ref={followerRef} />
     </>
   )

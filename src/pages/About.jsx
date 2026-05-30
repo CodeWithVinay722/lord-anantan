@@ -27,26 +27,12 @@ const whyUs = [
 ]
 
 // Team data
+
 const team = [
   {
-    name: 'Shelesh Tantway',       // ← client name
+    name: 'Shelesh Tantway',
     role: 'Owner & Director',
-    image: '/images/hero/hero5.jpeg',  // ← use any client image for now
-  },
-  {
-    name: 'General Manager',
-    role: 'Hotel Management',
-    image: '/images/hero/hero6.jpeg',
-  },
-  {
-    name: 'Head Chef',
-    role: 'Culinary Expert',
-    image: '/images/hero/hero7.jpeg',
-  },
-  {
-    name: 'Events Manager',
-    role: 'Banquet & Events',
-    image: '/images/hero/hero8.jpeg',
+    image: '/images/director.jpeg',  // save his photo as director.jpeg in public/images/
   },
 ]
 
@@ -158,29 +144,32 @@ function About() {
           </div>
 
           {/* ── TEAM ── */}
-          <div className="team-section">
+          {/* TEAM */}
+<div className="team-section">
+  <div className="team-header">
+    <p className="section-label">The Person Behind The Magic</p>
+    <h2 className="section-heading">Meet Our Director</h2>
+    <div className="gold-divider centered"></div>
+  </div>
 
-            <div className="team-header">
-              <p className="section-label">The People Behind The Magic</p>
-              <h2 className="section-heading">Meet Our Team</h2>
-              <div className="gold-divider centered"></div>
-            </div>
+  {/* Single card centered */}
+  <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '40px',
+  }}>
+    <div className="team-card" style={{ width: '280px' }}>
+      <div className="team-image">
+        <img src="/images/director.jpeg" alt="Shelesh Tantway" />
+      </div>
+      <div className="team-info">
+        <h3 className="team-name">Shelesh Tantway</h3>
+        <p className="team-role">Owner & Director</p>
+      </div>
+    </div>
+  </div>
 
-            <div className="team-grid">
-              {team.map((member, i) => (
-                <div className="team-card" key={i}>
-                  <div className="team-image">
-                    <img src={member.image} alt={member.name} />
-                  </div>
-                  <div className="team-info">
-                    <h3 className="team-name">{member.name}</h3>
-                    <p className="team-role">{member.role}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-          </div>
+</div>
 
           {/* ── STATS BANNER ── */}
           <div className="stats-banner">
