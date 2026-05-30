@@ -1,58 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://lordanantan.com/</loc>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lordanantan.com/images/hero/hero1.jpeg</image:loc>
+      <image:title>Lord Anantam Resort Salaiya Bhopal</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://lordanantan.com/about</loc>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lordanantan.com/rooms</loc>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://lordanantan.com/images/rooms/room1.jpeg</image:loc>
+      <image:title>Luxury Rooms at Lord Anantam Resort Bhopal</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://lordanantan.com/banquet</loc>
-    <lastmod>2025-05-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2025-05-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://lordanantan.com/images/banquet/banquet1.jpeg</image:loc>
+      <image:title>Banquet Hall Lord Anantam Resort Bhopal</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://lordanantan.com/gallery</loc>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://lordanantan.com/contact</loc>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://lordanantan.com/wedding</loc>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lordanantan.com/dining</loc>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/RoomsPage.css'
+import SEO from '../components/SEO'
 
 const allRooms = [
   {
@@ -62,6 +63,11 @@ function Rooms() {
 
   return (
     <div>
+      <SEO
+  title="Luxury Rooms & Suites | Lord Anantam Resort Bhopal"
+  description="Book luxury rooms and suites at Lord Anantam Resort Salaiya Bhopal. Deluxe rooms, executive suites, family suites and presidential suite available."
+  keywords="luxury rooms Bhopal, hotel rooms Salaiya, book room Lord Anantam, suite Bhopal"
+/>
 
       {/* PAGE BANNER */}
       <div className="page-banner">

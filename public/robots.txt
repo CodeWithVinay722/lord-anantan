@@ -1,8 +1,11 @@
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
+# Sitemap location
 Sitemap: https://lordanantan.com/sitemap.xml
 
-# Block unnecessary files
+# Block unnecessary paths
 Disallow: /node_modules/
 Disallow: /src/
+Disallow: /*.json$

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../styles/BanquetPage.css'
 import { useEffect } from 'react'  
+import SEO from '../components/SEO'
 
 const venues = [
   {
@@ -51,6 +52,11 @@ function Banquet() {
 
   return (
     <div>
+      <SEO
+  title="Banquet Hall & Event Venue | Lord Anantam Resort Bhopal"
+  description="Grand banquet halls and event venues at Lord Anantam Resort Salaiya Bhopal. Perfect for weddings, corporate events, birthday parties. Capacity up to 500 guests."
+  keywords="banquet hall Bhopal, event venue Salaiya, wedding hall Bhopal, party hall Bhopal, Lord Anantam banquet"
+/>
 
       {/* PAGE BANNER */}
       <div className="page-banner">
