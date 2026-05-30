@@ -84,7 +84,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>© 2025 Lord Anantan. All Rights Reserved.</p>
-        <p>Designed & Developed with ❤️</p>
+        <p>Designed & Developed By Vinay Raghuwanshi (+91 7223058480)</p>
       </div>
 
     </footer>
