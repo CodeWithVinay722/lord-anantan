@@ -4,23 +4,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          // Split large libraries into separate chunks
-          vendor: ['react', 'react-dom'],
-          router: ['react-router-dom'],
-          gsap:   ['gsap'],
-          icons:  ['react-icons'],
-        }
-      }
-    },
-    // Compress output
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,    // removes console.log in production
-      }
-    }
+    // Remove the manualChunks that caused the error
+    // Keep it simple — Vite handles optimization automatically
+    minify: 'esbuild',    // use esbuild instead of terser (faster, no extra install)
   }
 })
