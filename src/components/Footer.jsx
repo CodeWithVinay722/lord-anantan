@@ -5,6 +5,7 @@ import {
 } from 'react-icons/fa'
 import '../styles/Footer.css'
 
+
 function Footer() {
   return (
     <footer className="footer">
@@ -42,6 +43,13 @@ function Footer() {
             <li><Link to="/rooms">Rooms & Suites</Link></li>
             <li><Link to="/gallery">Gallery</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
+            <li>
+  <Link to="/privacy">Privacy Policy</Link>
+</li>
+
+<li>
+  <Link to="/terms">Terms & Conditions</Link>
+</li>
           </ul>
         </div>
 
@@ -54,6 +62,8 @@ function Footer() {
             <li><Link to="/banquet">Banquet Hall</Link></li>
             <li><Link to="/dining">Restaurant & Dining</Link></li>
             <li><Link to="/rooms">Luxury Rooms</Link></li>
+            
+<li><Link to="/privacy">Privacy Policy</Link></li>
           </ul>
         </div>
 

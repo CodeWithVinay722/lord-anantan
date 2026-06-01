@@ -85,7 +85,7 @@ function Welcome() {
 </div>
           <div className="experience-badge" ref={badgeRef}>
   <span className="badge-number">5+</span>
-  <span className="badge-text">Years of experience with Lord of The Drinks</span>
+  <span className="badge-text">YEARS OF EXPERIENCE IN HOSPITALITY & GUEST SERVICES</span>
 </div>
         </div>
 

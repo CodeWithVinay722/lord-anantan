@@ -16,6 +16,8 @@ import Wedding from './pages/Wedding'
 import NotFound from './pages/NotFound'
 import Decoration from './pages/Decoration'   // ← add
 import Catering   from './pages/Catering'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
 
 const WHATSAPP_NUMBER = '919669752322'
 
@@ -74,6 +76,8 @@ function App() {
         <Route path="/wedding" element={<Wedding />} />
         <Route path="*"        element={<NotFound />} />
         <Route path="/decoration" element={<Decoration />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
 <Route path="/catering"   element={<Catering />} />
       </Routes>
 

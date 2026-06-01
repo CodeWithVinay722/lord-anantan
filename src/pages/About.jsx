@@ -6,8 +6,8 @@ import { useEffect } from 'react'
 const whyUs = [
   {
     icon: '🏆',
-    title: 'Award Winning',
-    desc: 'Recognized as the best luxury resort in Bhopal for 5 consecutive years by hospitality associations.',
+    title: 'Symbol of Excellence',
+    desc: 'Recognized as the best luxury resort in Bhopal for its exceptional service and amenities.',
   },
   {
     icon: '👨‍🍳',
@@ -31,16 +31,16 @@ const whyUs = [
 const team = [
   {
     name: 'Shelesh Tantway',
-    role: 'Owner & Director',
+    role: 'Managing Director',
     image: '/images/director.jpeg',  // save his photo as director.jpeg in public/images/
   },
 ]
 
 // Stats data
 const stats = [
-  { number: '10+', label: 'Years of Excellence' },
+  { number: '5+', label: 'Years of Excellence in hospitality' },
   { number: '50+', label: 'Luxury Rooms' },
-  { number: '5000+', label: 'Happy Guests' },
+  { number: '500+', label: 'Happy Guests' },
   { number: '200+', label: 'Events Hosted' },
 ]
 
@@ -77,7 +77,7 @@ function About() {
 </div>
               <div className="about-badge">
                 <span className="about-badge-number">5+</span>
-                <span className="about-badge-text">Years of Experience with Lord of drinks</span>
+                <span className="about-badge-text">YEARS OF EXPERIENCE IN HOSPITALITY & GUEST SERVICES</span>
               </div>
 
             </div>
@@ -164,7 +164,7 @@ function About() {
       </div>
       <div className="team-info">
         <h3 className="team-name">Shelesh Tantway</h3>
-        <p className="team-role">Owner & Director</p>
+        <p className="team-role">Managing Director</p>
       </div>
     </div>
   </div>
