@@ -149,7 +149,7 @@ npm run build
 - 📍 Salaiya, Bhopal, Madhya Pradesh
 - 📞 +91 96697 52322
 - 📧 lordanantam@gmail.com
-- 📘 [Facebook](https://www.facebook.com/share/1CrxJke46y/?mibextid=wwXIfr)
+- 📘 [Facebook](https://www.facebook.com/people/Lord-Anantan-Resort/61588658803934/#)
 - 📸 [Instagram](https://www.instagram.com/tantwayshelesh)
 
 ---

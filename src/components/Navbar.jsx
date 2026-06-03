@@ -52,10 +52,10 @@ function Navbar() {
           </a>
         </div>
         <div className="topbar-right">
-          <a href="https://www.facebook.com/share/1CrxJke46y/?mibextid=wwXIfr" target="_blank" rel="noreferrer">
+          <a href="https://www.facebook.com/people/Lord-Anantan-Resort/61588658803934/#" target="_blank" rel="noreferrer">
   <FaFacebook className="social-icon" />
             </a>
-            <a href="https://www.instagram.com/tantwayshelesh?igsh=eGZ1dDg2dmZ3bjRn&utm_source=qr" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/lordanantanresort/" target="_blank" rel="noreferrer">
               <FaInstagram className="social-icon" />
             </a>  
         </div>

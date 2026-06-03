@@ -21,11 +21,11 @@ function Footer() {
             unforgettable memories.
           </p>
           <div className="footer-socials">
-            <a href="https://www.facebook.com/share/1CrxJke46y/?mibextid=wwXIfr"
+            <a href="https://www.facebook.com/people/Lord-Anantan-Resort/61588658803934/#"
     target="_blank" rel="noreferrer">
     <FaFacebook />
   </a>
-  <a href="https://www.instagram.com/tantwayshelesh?igsh=eGZ1dDg2dmZ3bjRn&utm_source=qr"
+  <a href="https://www.instagram.com/lordanantanresort/"
     target="_blank" rel="noreferrer">
     <FaInstagram />
   </a>
