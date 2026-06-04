@@ -345,3 +345,23 @@
     grid-template-columns: 1fr;
   }
 }
+.about-connect-box {
+  background: var(--dark-green);
+  padding: 20px 24px;
+  border-left: 4px solid var(--gold);
+  margin-top: 8px;
+}
+
+.about-connect-box h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.about-connect-box p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.8;
+  margin: 0;
+}

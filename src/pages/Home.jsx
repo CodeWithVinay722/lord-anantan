@@ -1,34 +1,32 @@
-import HeroSlider from '../components/HeroSlider'
-import { useEffect } from 'react'  
-import Welcome from '../components/Welcome'
-import Facilities from '../components/Facilities'
-import RoomsSection from '../components/RoomsSection'
-import GallerySection from '../components/GallerySection'
-import ContactSection from '../components/ContactSection'   // ← add this
-import SEO from '../components/SEO'
-
-// Inside return — first line:
+import { useEffect } from 'react'
+import HeroSlider      from '../components/HeroSlider'
+import Welcome         from '../components/Welcome'
+import ResortHighlights from '../components/ResortHighlights'   // ← add
+import Facilities      from '../components/Facilities'
+import RoomsSection    from '../components/RoomsSection'
+import GallerySection  from '../components/GallerySection'
+import ContactSection  from '../components/ContactSection'
+import SEO             from '../components/SEO'
 
 function Home() {
   useEffect(() => {
-    document.title = 'Lord Anantan Hotel & Resort | Luxury Stay in Bhopal'
+    document.title = 'Lord Anantam Resort | Luxury Hotel & Marriage Garden in Salaiya, Bhopal'
   }, [])
+
   return (
-    
     <div>
       <SEO
-  title="Banquet Hall & Event Venue | Lord Anantam Resort Bhopal"
-  description="Grand banquet halls and event venues at Lord Anantam Resort Salaiya Bhopal. Perfect for weddings, corporate events, birthday parties. Capacity up to 500 guests."
-  keywords="banquet hall Bhopal, event venue Salaiya, wedding hall Bhopal, party hall Bhopal, Lord Anantam banquet"
-/>
-
+        title="Lord Anantam Resort | Luxury Hotel & Marriage Garden Salaiya Bhopal"
+        description="Lord Anantam Resort — Luxury Hotel on 3+ acres in Salaiya Bhopal. Premium rooms, banquet halls, wedding venue, huge parking, eco-friendly. NH-46 connected."
+        keywords="Lord Anantam, resort Salaiya Bhopal, luxury hotel Bhopal, marriage garden Bhopal, NH-46 resort, banquet hall Bhopal"
+      />
       <HeroSlider />
       <Welcome />
+      <ResortHighlights />     {/* ← placed between Welcome and Facilities */}
       <Facilities />
       <RoomsSection />
       <GallerySection />
-      <ContactSection />        
-                                    {/* ← add this */}
+      <ContactSection />
     </div>
   )
 }

@@ -89,9 +89,13 @@ function About() {
                 A Legacy of Luxury & Warm Hospitality
               </h2>
               <div className="gold-divider"></div>
+              <div className="about-connect-box">
+  <h4>📍 Strategic Location</h4>
+  <p>Situated in Salaiya, Bhopal — our resort enjoys excellent connectivity to NH-46, Hoshangabad Road and Kolar Road, with Raja Bhoj Airport just ~24 km away.</p>
+</div>
 
               <p>
-                Founded over a decade ago, Lord Anantan Hotel & Resort was born
+                Lord Anantan Hotel & Resort was born
                 from a simple dream — to create a place where every guest
                 feels truly special. What started as a boutique property
                 has grown into one of Bhopal's most celebrated luxury

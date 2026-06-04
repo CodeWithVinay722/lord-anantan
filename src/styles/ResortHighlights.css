@@ -1,0 +1,239 @@
+/* OUTER SECTION */
+.highlights-section {
+  background-color: var(--white);
+  padding: 100px 60px;
+}
+
+/* HEADER */
+.highlights-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 60px auto;
+}
+
+.highlights-subtext {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.9;
+  margin-top: 16px;
+}
+
+/* THREE HIGHLIGHT CARDS */
+.highlights-grid {
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.highlight-card {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: var(--white);
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+/* TOP COLORED BAND */
+.highlight-card-top {
+  padding: 32px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.highlight-icon {
+  font-size: 48px;
+}
+
+.highlight-number-box {
+  text-align: right;
+}
+
+.highlight-number {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.highlight-unit {
+  display: block;
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* CARD BODY */
+.highlight-card-body {
+  padding: 28px;
+  background: var(--cream);
+}
+
+.highlight-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.highlight-desc {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.9;
+}
+
+/* CONNECTIVITY WRAPPER */
+.connectivity-wrapper {
+  background: var(--dark-green);
+  margin: 0 -60px -100px;
+  padding: 80px 60px;
+}
+
+.connectivity-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+.connectivity-header .section-label {
+  color: var(--gold);
+}
+
+.connectivity-header .section-heading {
+  color: var(--white);
+}
+
+.connectivity-header .gold-divider {
+  margin: 14px auto 0;
+}
+
+.connectivity-header .highlights-subtext {
+  color: rgba(255,255,255,0.7);
+}
+
+/* CONNECTIVITY CARDS GRID — 3 columns */
+.connectivity-grid {
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.connectivity-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 24px;
+  border-radius: 4px;
+  transition: background 0.3s, border 0.3s, transform 0.3s;
+}
+
+.connectivity-card:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.connectivity-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.connectivity-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.connectivity-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.8;
+}
+
+/* MAP CTA */
+.connectivity-cta {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.connectivity-cta p {
+  color: rgba(255,255,255,0.8);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.connectivity-cta strong {
+  color: var(--gold);
+}
+
+.directions-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: var(--gold);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.3s, transform 0.3s;
+  border-radius: 2px;
+}
+
+.directions-btn:hover {
+  background: var(--white);
+  color: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 1024px) {
+  .highlights-grid,
+  .connectivity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights-section {
+    padding: 60px 20px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .connectivity-wrapper {
+    margin: 0 -20px -60px;
+    padding: 60px 20px;
+  }
+
+  .connectivity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-number {
+    font-size: 40px;
+  }
+
+  .connectivity-card {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
