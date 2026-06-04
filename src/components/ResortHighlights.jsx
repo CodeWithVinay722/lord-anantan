@@ -214,7 +214,9 @@ function ResortHighlights() {
             Get Directions on Google Maps
           </a>
 
-          ⚠️ Legal Disclaimer to Add
+          
+        </div>
+        ⚠️ Legal Disclaimer to Add
 Add this small note inside ResortHighlights.jsx under the connectivity CTA:
 jsx<p style={{
   fontSize: '11px',
@@ -225,8 +227,6 @@ jsx<p style={{
   * Road connectivity and distances are approximate and subject to route conditions.
   Please verify current routes via Google Maps before travel.
 </p>
-        </div>
-
       </div>
 
     </section>
