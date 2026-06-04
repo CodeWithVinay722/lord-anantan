@@ -36,16 +36,8 @@ const connectivityPoints = [
     icon: '🔄',
     title: 'Ring Road Connectivity',
     desc: 'Well connected via Bhopal\'s developing ring road network, offering multi-directional access from Indore, Vidisha, Sehore and all surrounding districts.',
-  },
-  <p style={{
-  fontSize: '11px',
-  color: 'rgba(255,255,255,0.4)',
-  marginTop: '16px',
-  fontStyle: 'italic'
-}}>
-  * Road connectivity and distances are approximate and subject to route conditions.
-  Please verify current routes via Google Maps before travel.
-</p>
+  }
+  
 ]
 
 // Resort USP highlights
@@ -221,6 +213,18 @@ function ResortHighlights() {
           >
             Get Directions on Google Maps
           </a>
+
+          ⚠️ Legal Disclaimer to Add
+Add this small note inside ResortHighlights.jsx under the connectivity CTA:
+jsx<p style={{
+  fontSize: '11px',
+  color: 'rgba(255,255,255,0.4)',
+  marginTop: '16px',
+  fontStyle: 'italic'
+}}>
+  * Road connectivity and distances are approximate and subject to route conditions.
+  Please verify current routes via Google Maps before travel.
+</p>
         </div>
 
       </div>
