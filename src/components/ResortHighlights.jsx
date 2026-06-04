@@ -216,9 +216,7 @@ function ResortHighlights() {
 
           
         </div>
-        ⚠️ Legal Disclaimer to Add
-Add this small note inside ResortHighlights.jsx under the connectivity CTA:
-jsx<p style={{
+        <p style={{
   fontSize: '11px',
   color: 'rgba(255,255,255,0.4)',
   marginTop: '16px',
